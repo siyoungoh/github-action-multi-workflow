@@ -1,0 +1,20 @@
+name: Manual Deploy Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '어느 환경에 배포할까요?'
+        required: true
+        default: staging
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 선택한 환경을 출력합니다
+        run: echo "선택한 환경: ${{ github.event.inputs.environment }}"

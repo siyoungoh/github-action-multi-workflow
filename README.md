@@ -1,3 +1,2 @@
 - for run workflow test 01
 - main 브랜치에 코드 푸시를 해보자
-- fork 해온 repo에서 PR할 수 있게 다시 수정이 필요하다.
